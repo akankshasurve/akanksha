@@ -1,0 +1,32 @@
+>>>
+
+>>>import urlparse
+
+>>>string='exactly 1 year ago,a classic called #Baahubali released.Now awaiting #Baahubali2... Also, need to know, why did #Katappa kill #Baahubali? '
+
+>>>new_string=""
+
+>>>for i in string.split():
+
+...s,n,p,pa,q,f=urlparse.urlparse(i)
+
+... if s&n:
+
+... pass
+... elif i[:1]=='#':
+
+...new_string=new_string.strip()+'+'
+
+i[1:]
+
+...else:
+
+... new_string=new_string.strip()++'i'
+
+...
+
+>>> new_string
+
+exactly 1 year ago, a classic called Baahubali released. Now awaiting Baahubali2... Also, need to know, why did Katappa kill Baahubali?
+
+>>>
